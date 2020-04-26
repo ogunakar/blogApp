@@ -4,4 +4,10 @@
   <h1> <%= newPostTitle %> </h1>
   <p> <%= newPostParagraph %> </p>
 
+  <form class="center" action="/delete" method="post">
+    <input type="hidden" name="postId" value="<%= requestedPostId %>">
+    <button type="submit" class="btn btn-success entry">Delete Post!</button>
+  </form>
+
+
 <%- include("partials/footer"); -%>
